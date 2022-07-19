@@ -1,15 +1,12 @@
-import ReactDOM from 'react-dom/client';
 import React from 'react';
-import './index.css';
-import { ThemeProvider } from '@emotion/react';
-import { theme } from 'components/constants';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'modern-normalize/modern-normalize.css';
+import './styles.css';
 
-import { App } from 'components/App/App';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<App />
-		</ThemeProvider>
-	</React.StrictMode>
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
